@@ -18,6 +18,7 @@ class ComposeViewController: UIViewController {
         }
 //        let newMemo = Memo(content: memo)
 //        Memo.dunmmyMemoList.append(newMemo)
+        DataManager.shared.addNewMemo(memo)
         
         
         NotificationCenter.default.post(name: ComposeViewController.newMemoDidInsert, object: nil)

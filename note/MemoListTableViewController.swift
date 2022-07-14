@@ -55,6 +55,7 @@ class MemoListTableViewController: UITableViewController {
         //Observer: 옵저버
         token = NotificationCenter.default.addObserver(forName: ComposeViewController.newMemoDidInsert, object: nil, queue: OperationQueue.main) { [weak self] (noti) in
             self?.tableView.reloadData()
+            //옵저버를 추가한다음 테이블이 reload되도록 구현
         }
         
         //queue-> notification이 전달되면 테이블 뷰를 업데이트 해야함 (ui 업데이트)
