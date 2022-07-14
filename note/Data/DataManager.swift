@@ -49,7 +49,7 @@ class DataManager {
         newMemo.insertDate = Date()
         
         // 여기서 생성된 메모를 memoList배열에 바로 저장하기 -> 불필요한 작업이 생략됨
-        memoList.insert(newMemo, at: 0)
+        memoList.insert(newMemo, at: 0)  
         //insert 메소드를 사용함으로써 배열 가장 앞부분에 로드 됨
         //append는 후에 생성되는 메모들이 저장되는 형식
         
